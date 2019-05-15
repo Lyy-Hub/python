@@ -8,7 +8,7 @@ while (1):
     if k == 27:
         break
     elif k == ord('s'):
-        cv2.imwrite('E:/OpenCV/' + str(i) + '.jpg', frame)
+        cv2.imwrite('E:/OpenCV/img/' + str(i) + '.jpg', frame)
         i += 1
     cv2.imshow("capture", frame)
 cap.release()
