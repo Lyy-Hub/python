@@ -21,7 +21,7 @@ while (1):
     k = cv2.waitKey(1)
     if k == 27:
         break
-    elif k == ord('s'):
+    elif k == ord(' '):
         # 写入本地
         cv2.imwrite('E:/OpenCV/img/' + str(i) + '.jpg', frame)
         # 读取本地图片，转成base64
