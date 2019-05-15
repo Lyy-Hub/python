@@ -4,6 +4,7 @@ import time
 import base64
 import random
 import string
+import os
 
 queue_name = '/queue/test'
 listener_name = 'SampleListener'
@@ -16,7 +17,7 @@ class SampleListener(object):
         #  随机字符串
         ran_str = ''.join(random.sample(string.ascii_letters + string.digits, 8))
         img = base64.b64decode(message)
-        file = open('E:/OpenCV/img/'+ ran_str +'.jpg', 'wb')
+        file = open(os.getcwd() + '/'+ ran_str +'.jpg', 'wb')
         file.write(img)
         file.close()
 
