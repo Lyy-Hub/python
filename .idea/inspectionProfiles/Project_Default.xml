@@ -7,6 +7,7 @@
           <option value="visuals" />
           <option value="机器学习.finding_donors.*" />
           <option value="sklearn.metrics.*" />
+          <option value="egaode.peiqi.鼻子" />
         </list>
       </option>
     </inspection_tool>

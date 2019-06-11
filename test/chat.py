@@ -1,5 +1,3 @@
-from test.chat import *
-
 turing = Tuling(api_key='3d51ffaa9a344c228887b6e4ebd6c417')
 bot = Bot()
 

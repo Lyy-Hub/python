@@ -7,7 +7,7 @@ queue_name = '/queue/test'
 listener_name = 'SampleListener'
 # 推送到队列queue
 def send_to_queue(msg):
-    conn = stomp.Connection10([('10.10.39.17', 61613)])
+    conn = stomp.Connection10([('127.0.0.1', 61613)])
     conn.start()
     conn.connect()
     print('发送：', msg)
