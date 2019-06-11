@@ -1,4 +1,4 @@
-import os, sys
+
 from PIL import Image
 
 image_size = [512, 256, 144, 140, 128, 120, 108, 100, 88, 72, 48, 32, 28]
