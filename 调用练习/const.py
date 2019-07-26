@@ -16,7 +16,7 @@ class _const:
                 "const name '%s' is not all uppercase" % name)
         self.__dict__[name] = value
     def __delattr__(self, name):
-        if name in self.__dict__:
+        if name in self._COMPANY_dict__:
             raise self.ConstError("can't unbind const(%s)" % name)
         raise NameError(name)
 
